@@ -5,16 +5,16 @@
 #include <iomanip>
 #include <sstream>
 
-void run(std::istream& in, std::ostream& out){
+void run(std::istream& in, std::ostream& out) {
   using namespace std::literals;
   // read movies from file
   std::ifstream movieStream{"movies.csv"};
   std::map<int, std::vector<std::string>> movies{};
   for (std::string line; std::getline(movieStream, line);) {
     std::vector<std::string> movie;
-    for (size_t first=0, last=0; last < line.length(); first=last+1) {
+    for (size_t first = 0, last = 0; last < line.length(); first = last + 1) {
       last = line.find(';', first);
-      movie.push_back(line.substr(first, last-first));
+      movie.push_back(line.substr(first, last - first));
     }
     movies.insert(std::make_pair(std::stoi(movie[0]), movie));
     out << movie[0] << ": " << movie[1] << "\n";
@@ -36,9 +36,9 @@ void run(std::istream& in, std::ostream& out){
       break;
     }
     std::vector<std::string> rental;
-    for (size_t first=0, last=0; last < input.length(); first=last+1) {
+    for (size_t first = 0, last = 0; last < input.length(); first = last + 1) {
       last = input.find(' ', first);
-      rental.push_back(input.substr(first, last-first));
+      rental.push_back(input.substr(first, last - first));
     }
     std::vector<std::string> movie = movies[std::stoi(rental[0])];
     double thisAmount = 0;

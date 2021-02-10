@@ -4,5 +4,4 @@
 
 void run(std::istream& in, std::ostream& out);
 
-
 #endif
