@@ -1,14 +1,14 @@
 ---
 Language: Cpp
-AccessModifierOffset: -4
+AccessModifierOffset: -2
 AllowShortFunctionsOnASingleLine: None
 AlignAfterOpenBracket: Align
 AlwaysBreakAfterReturnType: None
 BinPackArguments: false
 BinPackParameters: false
-BreakBeforeBraces: Allman
+BreakBeforeBraces: Attach
 ColumnLimit: 90
-IndentWidth: 4
+IndentWidth: 2
 FixNamespaceComments: false
 ConstructorInitializerAllOnOneLineOrOnePerLine: true
 BreakConstructorInitializers: BeforeComma
@@ -19,6 +19,6 @@ ReflowComments: false
 SortIncludes: false
 SortUsingDeclarations: false
 SpaceAfterTemplateKeyword: true
-TabWidth: 4
+TabWidth: 2
 UseTab: Never
 ...
