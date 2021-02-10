@@ -18,6 +18,9 @@ add_subdirectory(test)
 
 set(PROJ_SOURCES run.h run.cpp)
 add_library(StoreLib ${PROJ_SOURCES})
+target_include_directories(StoreLib
+        PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}
+        )
 
 add_executable(commandline_videostore_cpp main.cpp)
 target_link_libraries(commandline_videostore_cpp StoreLib)
