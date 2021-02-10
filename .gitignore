@@ -1,3 +1,10 @@
 cmake-build-debug/
 .idea/
-
+/default.profraw
+/*.dSYM/
+/commandline_videostore_cpp
+/MoreTests
+/SingleTest
+/*.exe
+/*.ilk
+/*.pdb
