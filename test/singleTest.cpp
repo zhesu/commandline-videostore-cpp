@@ -57,5 +57,6 @@ int main() {
     std::cerr << "TEST FAILED! Expected: \n"
               << expected << "\n actual:\n"
               << output.str() << '\n';
+    return 1;
   }
 }
