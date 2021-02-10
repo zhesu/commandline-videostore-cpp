@@ -8,7 +8,6 @@ add_subdirectory(test)
 enable_testing()
 add_test(MainTest SingleTest)
 
-
 set(PROJ_SOURCES run.h run.cpp)
 add_library(StoreLib ${PROJ_SOURCES})
 
