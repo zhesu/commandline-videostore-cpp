@@ -19,3 +19,10 @@
   * https://github.com/fmtlib/fmt
 * C/C++ Coverage CLion Plugin
   * https://github.com/zero9178/GCoverage4CLion/blob/master/README.md
+
+## Useful snippets
+
+```bash
+cd <cmake build directory>
+APPROVAL_TESTS_USE_REPORTER=TextDiffReporter watch -c -n 1 "cmake --build . --parallel 4 && ctest . --output-on-failure -R MoreTests"
+```
