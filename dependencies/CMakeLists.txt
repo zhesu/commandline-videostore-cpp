@@ -4,7 +4,7 @@
 include(FetchContent)
 
 # Names of targets added here:
-#   Catch2::Catch2 ApprovalTests::ApprovalTests fmt::fmt
+#   ghc_filesystem Catch2::Catch2 ApprovalTests::ApprovalTests fmt::fmt
 
 # -------------------------------------------------------------------
 FetchContent_Declare(Catch2
@@ -23,3 +23,9 @@ FetchContent_Declare(fmt
         GIT_REPOSITORY https://github.com/fmtlib/fmt.git
         GIT_TAG 7.1.3)
 FetchContent_MakeAvailable(fmt)
+
+# -------------------------------------------------------------------
+FetchContent_Declare(filesystem
+        GIT_REPOSITORY https://github.com/gulrak/filesystem.git
+        GIT_TAG v1.5.0)
+FetchContent_MakeAvailable(filesystem)
