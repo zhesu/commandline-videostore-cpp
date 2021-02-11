@@ -4,16 +4,28 @@
 #include <vector>
 #include <iomanip>
 #include <sstream>
+#include <iostream>
 
-const char* getMovieFileLocation() {
-  const char* movieFile = "movies.csv";
-  return movieFile;
+#include <ghc/filesystem.hpp>
+namespace fs = ghc::filesystem;
+
+std::string getMovieFileLocation() {
+  // Calculate the location of the file of movies, in the
+  // folder containing this source file:
+  fs::path p{__FILE__};
+  ghc::filesystem::path moviePath = p.parent_path() / "movies.csv";
+  if (!fs::exists(moviePath)) {
+    std::string errorMessage = "ERROR: Movie file not found: " + moviePath.string();
+    std::cerr << errorMessage << std::endl;
+    throw std::runtime_error(errorMessage);
+  }
+  return moviePath;
 }
 
 void run(std::istream& in, std::ostream& out) {
   using namespace std::literals;
   // read movies from file
-  const char* movieFile = getMovieFileLocation();
+  std::string movieFile = getMovieFileLocation();
   std::ifstream movieStream{movieFile};
   std::map<int, std::vector<std::string>> movies{};
   for (std::string line; std::getline(movieStream, line);) {

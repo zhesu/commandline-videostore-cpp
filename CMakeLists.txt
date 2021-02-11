@@ -17,6 +17,7 @@ add_library(StoreLib ${PROJ_SOURCES})
 target_include_directories(StoreLib
         PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}
         )
+target_link_libraries(StoreLib PUBLIC ghc_filesystem)
 
 add_executable(commandline_videostore_cpp main.cpp)
 target_link_libraries(commandline_videostore_cpp StoreLib)
