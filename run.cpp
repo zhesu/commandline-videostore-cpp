@@ -19,7 +19,7 @@ std::string getMovieFileLocation() {
     std::cerr << errorMessage << std::endl;
     throw std::runtime_error(errorMessage);
   }
-  return moviePath;
+  return moviePath.string();
 }
 
 void run(std::istream& in, std::ostream& out) {
