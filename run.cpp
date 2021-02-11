@@ -5,10 +5,16 @@
 #include <iomanip>
 #include <sstream>
 
+const char* getMovieFileLocation() {
+  const char* movieFile = "movies.csv";
+  return movieFile;
+}
+
 void run(std::istream& in, std::ostream& out) {
   using namespace std::literals;
   // read movies from file
-  std::ifstream movieStream{"movies.csv"};
+  const char* movieFile = getMovieFileLocation();
+  std::ifstream movieStream{movieFile};
   std::map<int, std::vector<std::string>> movies{};
   for (std::string line; std::getline(movieStream, line);) {
     std::vector<std::string> movie;
