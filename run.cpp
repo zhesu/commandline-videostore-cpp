@@ -84,11 +84,20 @@ void run(std::istream& in, std::ostream& out) {
 std::string getMovieFileLocation() {
   // Calculate the location of the file of movies, in the
   // folder containing this source file:
-  // (This may not work with Ninja builds for in-source builds.)
   fs::path p{__FILE__};
   ghc::filesystem::path moviePath = p.parent_path() / "movies.csv";
   if (!fs::exists(moviePath)) {
-    std::string errorMessage = "ERROR: Movie file not found: " + moviePath.string();
+    std::string errorMessage =
+        "\n\n>> ERROR: Movie file not found: " + moviePath.string() +
+        "\n"
+        ">> __FILE__ is '" __FILE__ +
+        "'\n"
+        ">> __FILE__ in this working directory does not find this source file.\n"
+        ">> If you are using the Ninja generator, your build tree \n"
+        "will need to be outside the source tree.\n"
+        ">> See "
+        "https://github.com/approvals/ApprovalTests.cpp/blob/master/doc/"
+        "TroubleshootingMisconfiguredBuild.md\n\n";
     std::cerr << errorMessage << std::endl;
     throw std::runtime_error(errorMessage);
   }
