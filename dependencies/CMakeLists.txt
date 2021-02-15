@@ -15,7 +15,7 @@ FetchContent_MakeAvailable(Catch2)
 # -------------------------------------------------------------------
 FetchContent_Declare(ApprovalTests
         GIT_REPOSITORY https://github.com/approvals/ApprovalTests.cpp.git
-        GIT_TAG v.10.7.1)
+        GIT_TAG 171-ninja-fix)
 FetchContent_MakeAvailable(ApprovalTests)
 
 # -------------------------------------------------------------------
