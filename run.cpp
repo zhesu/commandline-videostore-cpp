@@ -84,6 +84,7 @@ void run(std::istream& in, std::ostream& out) {
 std::string getMovieFileLocation() {
   // Calculate the location of the file of movies, in the
   // folder containing this source file:
+  // (This may not work with Ninja builds for in-source builds.)
   fs::path p{__FILE__};
   ghc::filesystem::path moviePath = p.parent_path() / "movies.csv";
   if (!fs::exists(moviePath)) {
