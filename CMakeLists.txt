@@ -8,7 +8,7 @@ add_subdirectory(dependencies)
 enable_testing()
 add_subdirectory(test)
 
-set(PROJ_SOURCES run.h run.cpp)
+set(PROJ_SOURCES run.h run.cpp movie_utilities.cpp movie_utilities.h)
 add_library(StoreLib ${PROJ_SOURCES})
 target_include_directories(StoreLib
         PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}
