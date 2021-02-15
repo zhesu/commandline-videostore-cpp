@@ -20,7 +20,7 @@ std::string getMovieFileLocation() {
         "'\n"
         ">> __FILE__ in this working directory does not find this source file.\n"
         ">> If you are using the Ninja generator, your build tree \n"
-        "will need to be outside the source tree.\n"
+        ">> will need to be outside the source tree.\n"
         ">> See "
         "https://github.com/approvals/ApprovalTests.cpp/blob/master/doc/"
         "TroubleshootingMisconfiguredBuild.md\n\n";
