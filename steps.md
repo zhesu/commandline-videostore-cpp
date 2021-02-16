@@ -12,6 +12,7 @@
 
 #### Set up Catch2-based test program
 
+* [ ] Review the CMake file in dependencies/ folder
 * [ ] Add empty [Catch2](https://github.com/catchorg/Catch2) test program, in test2/ directory
   * [ ] main.cpp
   * [ ] integration_tests.cpp
