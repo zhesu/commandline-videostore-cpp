@@ -1,5 +1,14 @@
 # commandline-videostore-cpp
 
+<!-- toc -->
+
+## Contents
+
+* [About...](#about)
+* [Credits](#credits)
+* [Useful Links](#useful-links)
+* [Useful snippets](#useful-snippets)<!-- endToc -->
+
 ## About...
 
 * This is Clare Macrae's fork of Arne Mertz's commandline-videostore-cpp exercise.
