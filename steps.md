@@ -16,6 +16,7 @@
 #### Add Catch2 test for run()
 
 * [ ] Add test for run() with empty input
+  * Hint: Use a raw string literal: `R"()"`
 * [ ] Try to make it pass, by pasting in actual output
 
 #### Use Approval Tests to test run()
