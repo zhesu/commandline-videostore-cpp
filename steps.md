@@ -39,7 +39,8 @@
     * [ ] Use CLion to create config with coverage enabled
 * [ ] Show **coverage with [C/C++ Coverage CLion Plugin](C/C++ Coverage CLion Plugin)**
 * [ ] Increase coverage
-    * Hint: Don't reason about the code
+  * Hint: Don't reason about the code
+* [ ] What happens if you sabotage a line in run.cpp, and run the tests?
 * [ ] Bonus points: Extract method `verifyVideoRentalSession(input)`
 
 #### Make tests independent of production data
