@@ -4,7 +4,7 @@
 
 * This is Clare Macrae's fork of Arne Mertz's commandline-videostore-cpp exercise.
   * https://github.com/claremacrae/commandline-videostore-cpp
-* The default branch in this fork is  `starting-point)`
+* The default branch in this fork is `starting-point`
 
 ## Credits
 
