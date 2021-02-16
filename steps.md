@@ -17,6 +17,7 @@
   * [ ] integration_tests.cpp
   * [ ] CMakeLists.txt
     * Hint: depend on Catch2::Catch2
+    * Hint: remember to add the new directory to top-level CMakeLists.txt file!
 
 #### Add Catch2 test for run()
 
