@@ -5,13 +5,18 @@
 * [ ] main.cpp and run.cpp
 * [ ] run `commandline_videostore_cpp` program
 
+#### Recommendations
+
+* Commit your code at every working step
+* Try to use refactoring tools when making changes to existing code
+
 #### Set up Catch2-based test program
 
 * [ ] Add empty [Catch2](https://github.com/catchorg/Catch2) test program, in test2/ directory
-    * [ ] main.cpp
-    * [ ] integration_tests.cpp
-    * [ ] CMakeLists.txt
-        * Hint: depend on Catch2::Catch2
+  * [ ] main.cpp
+  * [ ] integration_tests.cpp
+  * [ ] CMakeLists.txt
+    * Hint: depend on Catch2::Catch2
 
 #### Add Catch2 test for run()
 
