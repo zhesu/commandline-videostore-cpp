@@ -14,6 +14,7 @@
 * This is Clare Macrae's fork of Arne Mertz's commandline-videostore-cpp exercise.
   * https://github.com/claremacrae/commandline-videostore-cpp
 * The default branch in this fork is `starting-point`
+* For more information, see the blog post [JetBrains Clion Webinar: Code and Slides](https://claremacrae.co.uk/blog/2021/02/clion-webinar-code-and-slides)
 
 ## Credits
 
