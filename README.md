@@ -1,13 +1,18 @@
 # commandline-videostore-cpp
 
+## About...
+
+* This is Clare Macrae's fork of Arne Mertz's commandline-videostore-cpp exercise.
+  * https://github.com/claremacrae/commandline-videostore-cpp
+* The default branch in this fork is  `starting-point)`
+
 ## Credits
 
 * Original Java version of the workshop can be found at:
   * https://github.com/rickjanda/commandline-videostore.
 * Arne Mertz's original C++ version can be found at:
   * https://github.com/arnemertz/commandline-videostore-cpp
-* This, Clare Macrae's fork of Arne's version, is at:
-  * https://github.com/claremacrae/commandline-videostore-cpp
+  * YouTube recording: [Arne's "Refactoring C++ Code" webinar](https://www.youtube.com/watch?v=Ks37FFl1pzg)
 
 ## Useful Links
 
