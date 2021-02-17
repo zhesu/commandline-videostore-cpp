@@ -1,16 +1,15 @@
 # Steps
 
 <!-- toc -->
-
 ## Contents
 
-* [Review initial code](#review-initial-code)
-* [Recommendations](#recommendations)
-* [Set up Catch2-based test program](#set-up-catch2-based-test-program)
-* [Add Catch2 test for run()](#add-catch2-test-for-run)
-* [Use Approval Tests to test run()](#use-approval-tests-to-test-run)
-* [Improve test's coverage of run.cpp](#improve-tests-coverage-of-runcpp)
-* [Make tests independent of production data](#make-tests-independent-of-production-data)<!-- endToc -->
+  * [Review initial code](#review-initial-code)
+  * [Recommendations](#recommendations)
+  * [Set up Catch2-based test program](#set-up-catch2-based-test-program)
+  * [Add Catch2 test for run()](#add-catch2-test-for-run)
+  * [Use Approval Tests to test run()](#use-approval-tests-to-test-run)
+  * [Improve test's coverage of run.cpp](#improve-tests-coverage-of-runcpp)
+  * [Make tests independent of production data](#make-tests-independent-of-production-data)<!-- endToc -->
 
 ## Review initial code
 

@@ -1,13 +1,12 @@
 # commandline-videostore-cpp
 
 <!-- toc -->
-
 ## Contents
 
-* [About...](#about)
-* [Credits](#credits)
-* [Useful Links](#useful-links)
-* [Useful snippets](#useful-snippets)<!-- endToc -->
+  * [About...](#about)
+  * [Credits](#credits)
+  * [Useful Links](#useful-links)
+  * [Useful Snippets](#useful-snippets)<!-- endToc -->
 
 ## About...
 
