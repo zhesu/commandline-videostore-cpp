@@ -3,6 +3,11 @@ project(commandline_videostore_cpp)
 
 set(CMAKE_CXX_STANDARD 14)
 
+if (MSVC)
+    # Enable exceptions for clang-cl
+    add_compile_options(/EHsc)
+endif ()
+
 add_subdirectory(dependencies)
 
 enable_testing()
